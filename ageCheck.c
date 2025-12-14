@@ -9,10 +9,12 @@ int main(){
         printf("You can vote.\n");
         printf("You can drive.\n");
     }
-    else {
-        printf("You are not an adult.\n");
+    else if ( age>=13 && age<18) {
+        printf("You are a teenager.\n");
     }
 
-    printf("Thank You!!!");
-    
+    else {
+        printf("Child");
+    }    
+    return 0;
 }
